@@ -1,5 +1,5 @@
 {
-  "name": "web-client",
+  "name": "clash-of-clans-bonus-tracker-web-client",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:web-client": "node dist/web-client/server/server.mjs"
+    "serve:ssr:Clash-Of-Clans-Bonus-Tracker-Web-Client": "node dist/clash-of-clans-bonus-tracker-web-client/server/server.mjs"
   },
   "private": true,
   "dependencies": {

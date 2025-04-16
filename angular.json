@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "web-client": {
+    "Clash-Of-Clans-Bonus-Tracker-Web-Client": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/web-client",
+            "outputPath": "dist/clash-of-clans-bonus-tracker-web-client",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -21,14 +21,17 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
             ],
             "styles": [
               "src/styles.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
-            "outputMode": "server",
+            "prerender": true,
             "ssr": {
               "entry": "src/server.ts"
             }
@@ -61,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "web-client:build:production"
+              "buildTarget": "Clash-Of-Clans-Bonus-Tracker-Web-Client:build:production"
             },
             "development": {
-              "buildTarget": "web-client:build:development"
+              "buildTarget": "Clash-Of-Clans-Bonus-Tracker-Web-Client:build:development"
             }
           },
           "defaultConfiguration": "development"
