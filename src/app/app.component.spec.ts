@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'Clash-Of-Clans-Bonus-Tracker-Web-Client' title`, () => {
+  it(`should have the 'web-client' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Clash-Of-Clans-Bonus-Tracker-Web-Client');
+    expect(app.title).toEqual('web-client');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Clash-Of-Clans-Bonus-Tracker-Web-Client');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, web-client');
   });
 });
