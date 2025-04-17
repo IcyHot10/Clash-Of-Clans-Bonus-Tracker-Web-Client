@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --configuration=production --base-href=/Clash-Of-Clans-Bonus-Tracker-Web-Client/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:Clash-Of-Clans-Bonus-Tracker-Web-Client": "node dist/clash-of-clans-bonus-tracker-web-client/server/server.mjs"

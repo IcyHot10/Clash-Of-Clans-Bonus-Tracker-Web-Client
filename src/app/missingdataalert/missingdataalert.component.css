@@ -1,0 +1,33 @@
+article{
+  width: 90%;
+  max-width: 50rem;
+  text-align: center;
+  justify-self: center;
+}
+
+.confused-barb{
+  width: 100%;
+  max-width: 15rem;
+  margin: 1rem 0;
+}
+
+.baby-e-drag{
+  width: 100%;
+  max-width: 13rem;
+  margin: 1rem 0;
+  justify-self: bottom;
+}
+
+.Images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.wizard{
+  width: 100%;
+  max-width: 50rem;
+  margin: 1rem 0;
+}
+

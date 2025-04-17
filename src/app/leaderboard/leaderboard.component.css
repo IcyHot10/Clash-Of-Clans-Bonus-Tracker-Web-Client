@@ -5,33 +5,36 @@ th {
   text-align: left;
   border-style: solid;
   border-width: 1px;
-  border-color: #ddd;
+  border-color: inherit;
 }
 
 td {
   border-style: solid;
   border-width: 1px;
-  border-color: #ddd;
+  border-bottom: 1px solid #4f4d52 !important;
+  border-color: inherit;
   padding: 10px;
 }
 
 tr {
   overflow: auto;
+  border-color: #167a3700;
+  border-radius: 129px;
 }
 
 .table-header {
-  background-color: #f0f0f0;
+  background-color: #3d0704;
   padding: 10px;
 }
 
 table {
   padding: 10px;
-  border: 1px solid #ddd;
   text-align: left;
   justify-self: center;
   width: 100%;
   font-style: normal;
   border-spacing: 0;
+  border-radius: 12px;
 }
 
 article {
@@ -62,4 +65,15 @@ h1 {
   font-family: "Luckiest Guy", cursive;
 }
 
+.bonus{
+  background-color: #d28e1752;
+}
+
+.left{
+  border-radius: 12px 0 0 0;
+}
+
+.right{
+  border-radius: 0 12px 0 0;
+}
 

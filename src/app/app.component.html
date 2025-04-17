@@ -1,2 +1,6 @@
 <app-header (ClanTagSelected)="onClanTagSelected($event)"></app-header>
+@if(clan.hasOwnProperty('clanTag')){
 <app-leaderboard [clan]="clan"></app-leaderboard>
+}@else{
+<app-missingdataalert [selected]="selected"></app-missingdataalert>
+}

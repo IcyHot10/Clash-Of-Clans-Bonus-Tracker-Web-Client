@@ -10,6 +10,7 @@ export const DUMMY_CLAN =
             th: '10',
             stars: '10',
             percentage: '100%',
+            bonus: true
         },
         {
             rank: 2,
@@ -17,6 +18,7 @@ export const DUMMY_CLAN =
             th: '10',
             stars: '10',
             percentage: '100%',
+            bonus: true
         },
         {
             rank: 3,
@@ -24,6 +26,7 @@ export const DUMMY_CLAN =
             th: '10',
             stars: '10',
             percentage: '100%',
+            bonus: true
         },
         {
             rank: 4,
@@ -31,6 +34,7 @@ export const DUMMY_CLAN =
             th: '10',
             stars: '10',
             percentage: '100%',
+            bonus: false
         },
         {
             rank: 5,
@@ -38,6 +42,7 @@ export const DUMMY_CLAN =
             th: '10',
             stars: '10',
             percentage: '100%',
+            bonus: false
         },
         {
             rank: 6,
@@ -45,7 +50,56 @@ export const DUMMY_CLAN =
             th: '10',
             stars: '10',
             percentage: '100%',
+            bonus: false
         },
+        {
+          rank: 7,
+          name: 'Jasmine Washington',
+          th: '10',
+          stars: '10',
+          percentage: '100%',
+          bonus: false
+      },
+      {
+          rank: 8,
+          name: 'Emily Thompson',
+          th: '10',
+          stars: '10',
+          percentage: '100%',
+          bonus: false
+      },
+      {
+          rank: 9,
+          name: 'Marcus Johnson',
+          th: '10',
+          stars: '10',
+          percentage: '100%',
+          bonus: false
+      },
+      {
+          rank: 10,
+          name: 'David Miller',
+          th: '10',
+          stars: '10',
+          percentage: '100%',
+          bonus: false
+      },
+      {
+          rank: 11,
+          name: 'Priya Patel',
+          th: '10',
+          stars: '10',
+          percentage: '100%',
+          bonus: false
+      },
+      {
+          rank: 12,
+          name: 'Arjun Singh',
+          th: '10',
+          stars: '10',
+          percentage: '100%',
+          bonus: false
+      },
     ]
   }
 ;

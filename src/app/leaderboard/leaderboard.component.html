@@ -6,16 +6,16 @@
   <table>
   <thead>
     <tr class="table-header">
-      <th>Rank</th>
+      <th class="left">Rank</th>
       <th>Name</th>
       <th>Town Hall</th>
       <th>Stars</th>
-      <th>Percentage</th>
+      <th class="right">Percentage</th>
     </tr>
   </thead>
   <tbody>
     @for (member of clan.leaderboard; track member.rank) {
-      <tr>
+      <tr [class.bonus]="member.bonus">
         <td>{{member.rank}}</td>
         <td>{{member.name}}</td>
         <td>{{member.th}}</td>
