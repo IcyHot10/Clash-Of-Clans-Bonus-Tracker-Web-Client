@@ -60,5 +60,7 @@ For more information on using the Angular CLI, including detailed command refere
 
 ## Deploy
 
+```bash
 ng build --base-href "https://github.com/IcyHot10/Clash-Of-Clans-Bonus-Tracker-Web-Client/"
 npx angular-cli-ghpages --dir=dist/Clash-Of-Clans-Bonus-Tracker-Web-Client/browser
+```
