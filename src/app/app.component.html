@@ -1,6 +1,7 @@
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#d28e1752" type = "square-jelly-box" [fullScreen] = "true"><p style="color: #d28e1752" > Loading... </p></ngx-spinner>
 <app-header (ClanTagSelected)="onClanTagSelected($event)"></app-header>
-@if(clan.hasOwnProperty('clanTag')){
+@if(clan.state == 'SUCCESS'){
 <app-leaderboard [clan]="clan"></app-leaderboard>
 }@else{
-<app-missingdataalert [selected]="selected"></app-missingdataalert>
+<app-missingdataalert [state]="clan.state"></app-missingdataalert>
 }

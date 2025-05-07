@@ -1,17 +1,30 @@
-@if(selected){
+@if(state == 'LOADING'){
   <article>
-    <h2>No data found</h2>
-    <p>Please check the clan tag and try again.</p>
+
+  </article>
+}@else if(state == 'UNSELECTED'){
+<article>
+  <h2>Enter a clan tag</h2>
+  <p>Note: if its not clan war league time this app is useless.</p>
+  <img src="assets/wizard.png" alt="Tis Confusion" class="wizard">
+</article>
+}@else if(state == 'NON-CWL'){
+  <article>
+    <h2>No CWL found</h2>
+    <p>Either your clan hasn't started a cwl</p>
     <p>Or its not clan war league time and this app is useless.</p>
     <article class = 'Images'>
       <img src="assets/Confused-Barb.png" alt="Tis Confusion" class="confused-barb">
       <img src="assets/Baby-E-Drag.png" alt="Tis Confusion" class="baby-e-drag">
     </article>
   </article>
-}@else{
-<article>
-  <h2>Enter a clan tag</h2>
-  <p>Note: if its not clan war league time this app is useless.</p>
-  <img src="assets/wizard.png" alt="Tis Confusion" class="wizard">
-</article>
+}@else if(state == 'NO-CLAN'){
+  <article>
+    <h2>No clan found</h2>
+    <p>Please check the clan tag and try again.</p>
+    <article class = 'Images'>
+      <img src="assets/Confused-Barb.png" alt="Tis Confusion" class="confused-barb">
+      <img src="assets/Baby-E-Drag.png" alt="Tis Confusion" class="baby-e-drag">
+    </article>
+  </article>
 }
