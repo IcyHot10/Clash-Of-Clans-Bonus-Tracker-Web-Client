@@ -16,16 +16,27 @@ export class HeaderComponent {
     this.ClanTagSelected.emit(clanTag);
   }
 
-  onInput(event: Event) {
-    const input = event.target as HTMLInputElement;
-    let value = input.value;
+  onKeyPress(event: KeyboardEvent) {
+    const char = event.key;
+    // Allow backspace, delete, tab, escape, enter
+    if (event.key === 'Backspace' || event.key === 'Delete' || event.key === 'Tab' ||
+        event.key === 'Escape' || event.key === 'Enter') {
+      return true;
+    }
 
+    // Only allow letters, numbers, and #
+    if (!/^[A-Za-z0-9#]$/.test(char)) {
+      event.preventDefault();
+      return false;
+    }
+    return true;
+  }
+
+  onClanTagChange(value: string) {
     if (!value.startsWith('#')) {
       value = '#' + value;
     }
     value = value.toUpperCase().replace(/[^#A-Z0-9]/g, '');
-
-    // Update the input value
     this.clanTag = value;
   }
 }

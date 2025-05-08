@@ -81,5 +81,10 @@ h1 {
   .hide-mobile{
     display: none;
   }
+
+  table {
+    max-width: 100%;
+    padding: 0;
+  }
 }
 

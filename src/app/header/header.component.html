@@ -4,11 +4,12 @@
     name="search"
     id="search"
     placeholder="Enter clan tag"
-    (keyup.enter)="onClanTagSelected(search.value)"
+    (keyup.enter)="onClanTagSelected(clanTag)"
     type="text"
     #search
     autocomplete="off"
     [(ngModel)]="clanTag"
-    (input)="onInput($event)"
+    (ngModelChange)="onClanTagChange($event)"
+    (keypress)="onKeyPress($event)"
   />
 </header>
