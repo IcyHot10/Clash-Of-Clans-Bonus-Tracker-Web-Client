@@ -1,4 +1,14 @@
 <header>
   <img src="assets/cocbs-logo.png" alt="Clash of Clans" />
-  <input name="search" id="search" placeholder="Enter clan tag" (keyup.enter)="onClanTagSelected(search.value)" type="text" #search autocomplete="off" oninput="this.value = this.value.toUpperCase().replace(/[^#A-Z0-9]/g, '')"/>
+  <input
+    name="search"
+    id="search"
+    placeholder="Enter clan tag"
+    (keyup.enter)="onClanTagSelected(search.value)"
+    type="text"
+    #search
+    autocomplete="off"
+    [(ngModel)]="clanTag"
+    (input)="onInput($event)"
+  />
 </header>
